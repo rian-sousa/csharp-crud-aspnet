@@ -12,9 +12,11 @@ namespace webSalesMvc.Controllers
         {
             _logger = logger;
         }
-
+         
         public IActionResult Index()
         {
+            ViewData["Nome"] = "Rian Sousa Florentino das Chagas";
+            ViewData["Messagem"] = "Mensagem vinda diretamente do controlador!";
             return View();
         }
 
